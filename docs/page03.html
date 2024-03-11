@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Chess.com</title>
+    <style>
+        body {
+            background-image: url(bg.png);
+            background-size: 96%;
+            background-position: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            padding: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            width: 330px;
+            color: #312e2b;
+            background-color: rgb(38, 36, 33);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 80px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box; 
+        }
+
+        input[type="checkbox"],
+        a,
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: -165px;
+            font-weight: bold;
+            font-size: 8px;
+        }
+
+        a {
+            margin-right: -203px;
+            margin-top: -30px;
+        }
+
+        p{
+            color: #7a6b6b;
+            margin-top: 15px; 
+            margin-bottom: 20px;
+        }
+
+        .butClass,
+        .apple,
+        .google,
+        .facebook {
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+
+        .butClass {
+            background-color: rgb(163, 209, 96);
+            color: #ffffff;
+            font-size: 24px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 800;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .apple {
+            color: white;
+            background-color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .google{
+            color: black;
+            background-color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .facebook{
+            color: white;
+            background-color: #096bd6;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .new{
+            margin-top: 5px; 
+            margin-bottom: 5px; 
+            color: white;
+            margin-right: 10px;
+            margin-left: -140px; 
+        }
+        .link{
+            margin-top: 5px; 
+            margin-left: 5px; 
+            margin-bottom: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Username or Email">
+        <input type="password" placeholder="Password">
+        <label>
+            <input type="checkbox" >Remember me
+        </label>
+        <a href="https://www.chess.com/forgot" target="rf">Forgot Password?</a>
+        <input type="button" class="butClass" value="Log In">
+        <p>OR</p>
+        <input type="button" class="apple" value="Log in with Apple">
+        <input type="button" class="google" value="Log in with Google">
+        <input type="button" class="facebook" value="Log in with Facebook">
+        <div style="display: flex; align-items: center;"> 
+            <p class="new">New?</p>
+            <a class="link" href="page02.html">Sign up - and start playing chess!</a>
+        </div>
+    </div>
+</body>
+</html>
